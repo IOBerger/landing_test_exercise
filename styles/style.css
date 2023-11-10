@@ -1,0 +1,465 @@
+@font-face {
+	font-family: 'Inter'; 
+	src: url('Inter-VariableFont_slnt,wght.ttf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body{
+    color: #29374E;
+    font-family: 'Inter';
+    background-color: #FFFFFF;
+}
+
+a,a:visited,a:active{
+    color: #0962E8;
+}
+
+a:hover{
+    color: #0754c7;
+}
+
+.container{
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 60px;
+    margin: auto;
+}
+
+.fin-kit-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 671px;
+    padding-left: 50px;
+    background-color: #CBECFF;
+    position: relative;
+    background-image: url("../img/header-phone.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left 350px bottom 45%;
+}
+
+.fin-kit-header-wrp{
+    width: 384px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.fin-kit-header-lang{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 31px;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.fin-kit-header-lang-ru{
+    background-color: #FFFFFF;
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 7px;
+    color: #0962E8;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;    
+}
+
+.fin-kit-header-lang-en{
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-right: 15px;
+    color: #29374E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fin-kit-header-wrp2{
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    padding: 31px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.fin-kit-header-note{
+    width: 190px;
+    height: min-content;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    padding: 22px 20px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.fin-kit-header-fit-kit{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 83.2px */
+}
+
+.fin-kit-header-kit{
+    width: 122px;
+    height: 80px;
+    padding: 1px 17px 3px 17px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: #0962E8;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 83.2px */
+    letter-spacing: 0.384px;
+}
+
+.fin-kit-header-description{
+    margin-top: 14px;
+    width: 450px;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 28.6px */
+}
+
+.fin-kit-header-demo-button{
+    width: 199px;
+    height: 52px;
+    margin-top: 38px;
+    border-radius: 8px;
+    background-color: #0962E8;
+    border-width: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+}
+
+.fin-kit-header-demo-button:hover{
+    background-color: #07429b;
+    cursor: pointer;
+}
+
+.note-useful,.note-panel,.note-simple,.note-flexible{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right 10px top 10px;
+}
+
+.note-useful{
+    background-image: url("../img/header-note-1.svg");
+}
+
+.note-panel{
+    background-image: url("../img/header-note-2.svg");
+}
+
+.note-simple{
+    background-image: url("../img/header-note-3.svg");
+}
+
+.note-flexible{
+    background-image: url("../img/header-note-4.svg");
+}
+
+.key-products{
+    padding: 0;
+}
+
+.key-products-title{
+    width: 753px;
+    margin: 150px auto 44px auto;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+}
+
+.key-products-title-mark{
+    color: #0962E8;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -1.14px;    
+}
+
+.key-products-card{
+    width: 502px;
+    height: 328px;
+    margin-right: 20px;
+    padding: 37px 20px 0 20px;
+    border-radius: 30px;
+    background-color: #E9F6FF;
+}
+
+.key-products-wrp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.key-products-card-title{
+    width: 200px;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+}
+
+.key-products-card-text{
+    margin-top: 12px;
+    width: 200px;
+    color: #000000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.product-card-1,.product-card-2{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right 0px bottom -10px;
+}
+
+.product-card-2{
+    background-image: url("../img/key-products-ask.png");
+}
+
+.product-card-1{
+    background-image: url("../img/key-products-strategies.png");
+}
+
+.worth{
+    margin-top: 114px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 200px;
+}
+
+.worth-offer{
+    width: 50%;
+}
+
+.worth-comments{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+
+.worth-comment{
+    width: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+}
+
+.worth-comment-img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.worth-offer-title{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -1.14px;
+}
+
+.worth-offer-styled{
+    color: #0962E8;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+}
+
+.worth-offer-description{
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+}
+
+.worth-offer-demo{
+    width: 199px;
+    height: 52px;
+    margin-top: 38px;
+    border-radius: 8px;
+    background-color: #0962E8;
+    border-width: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+}
+
+.worth-offer-demo:hover{
+    background-color: #07429b;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fin-kit-header{
+        align-content: space-between;
+        width: 100%;
+        height: fit-content;
+        background-image: none;
+        padding: 0;
+    }
+
+    .fin-kit-header-description{
+        width: 100%;
+    }
+
+    .fin-kit-header-wrp2{
+        position: relative;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fin-kit-header-note{
+        width: 50%;
+    }
+
+    .fin-kit-header-picture{
+        width: 100%;
+        height: 600px;
+        padding: 0;
+        margin: 0;
+        background-image: url("../img/header-phone.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 50% 50%;
+    }
+
+    .fin-kit-header-wrp{
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .fin-kit-header-demo-button{
+        width: 100%;
+    }
+
+    .fin-kit-header-note{
+        width: 210px;
+        height: 140px;
+        padding: 52px 20px 25px 20px;
+        margin: 20px;
+    }
+
+    .note-useful,.note-simple,.note-panel,.note-flexible{
+        background-position: left 20px top 10px;
+    }
+
+    .key-products-wrp{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .key-products-card{
+        margin: 10px;
+    }
+
+    .worth{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .worth-offer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .worth-comments{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .worth-offer-demo{
+        width: 100%;
+    }
+
+    .worth-comment{
+        box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 20px;
+        width: 200px;
+        text-align: left;
+    }
+
+    .key-products-title{
+        width: 100%;
+    }
+
+    .key-products-card{
+        width: 100%;
+    }
+
+}
